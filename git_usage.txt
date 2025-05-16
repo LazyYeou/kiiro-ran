@@ -1,0 +1,4 @@
+git init => to initialize new git repository
+git add . ==> to stages all changes
+git add <file> => to stage a file for commit 
+git commit -m "messages" => commit stages file with messages
