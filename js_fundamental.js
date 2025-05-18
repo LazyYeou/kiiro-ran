@@ -32,19 +32,23 @@ const object = {}; //object
 
 // -- OPERATOR --
 
-console.log(+false); //unary + operator (convert non number value to number)
+// console.log(+false); //unary + operator (convert non number value to number)
 
 // let age = prompt("input your age", 0);
 
 // let message = age < 10 ? "Child" : age < 20 ? "Teen" : age < 60 ? "Adult" : "Old";
 // console.log(message);
 
-console.log(bigInt ?? "sigma");
-console.log(nullValue ?? "sigma");
-console.log(undefinedValue ?? "sigma2");
+// console.log(bigInt ?? "sigma");
+// console.log(nullValue ?? "sigma");
+// console.log(undefinedValue ?? "sigma2");
 
-let expressionFunc = function () {
-  console.log("aku sigma");
-};
+// let expressionFunc = function () {
+//   console.log("aku sigma");
+// };
 
-expressionFunc();
+// expressionFunc();
+
+let a = "a";
+
+console.log(a.concat("1", " ", "3", "Bar"));
