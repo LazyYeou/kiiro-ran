@@ -1,20 +1,15 @@
-function binarySearch(array, target) {
-    var left = 0;
-    var right = array.length - 1;
-    while (left < right) {
-        var mid = Math.floor((right + left) / 2);
-        if (array[mid] === target) {
-            return mid;
-        }
-        else if (array[mid] <= target) {
-            left = mid + 1;
-        }
-        else {
-            right = mid - 1;
-        }
-    }
-    return null;
+function isPalindrome(x) {
+  if (x < 0 || (x % 10 == 0 && x !== 0)) {
+    return false;
+  }
+  revert_num = 0;
+  temp_x = x;
+  while (x != 0) {
+    revert_num = revert_num * 10 + (x % 10);
+    x = Math.floor(x / 10);
+    console.log(x, revert_num);
+  }
+  return temp_x === revert_num;
 }
-var array1 = [1, 2, 3, 6, 7, 8, 10];
-var jar = binarySearch(array1, 6);
-console.log(jar);
+
+console.log(isPalindrome(121));
