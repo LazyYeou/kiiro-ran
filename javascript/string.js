@@ -24,7 +24,7 @@ function reverseString(s) {
   s = s.join(""); //join array to string
   console.log(s);
 }
-*/
+
 
 //instance string method
 //String.prototype.at
@@ -70,3 +70,37 @@ function inc(sentence, word) {
   return true;
 }
 console.log(inc(sentece, "is f"));
+
+//String.prototypes.indexOf
+//initial @position is 0
+
+function myIndexOf(sentence, searchString, position = 0) {
+  for (let i = position; i < sentence.length; i++) {
+    if (searchString[0] == sentence[i]) {
+      for (let j = 0; j < searchString.length; j++) {
+        if (searchString[j] != sentence[i + j]) {
+          break;
+        }
+      }
+      return i;
+    }
+  }
+  return -1;
+}
+console.log(sentece.indexOf("eb")); //return the index of @searchString greater than @position
+console.log(myIndexOf(sentece, "eb"));
+
+*/
+
+//String Compare Lexicographically
+function strCompare(a, b) {
+  if (a === b) {
+    return 0;
+  }
+  if (a > b) {
+    return 1;
+  }
+  return -1;
+}
+console.log("jawa".at(6));
+
