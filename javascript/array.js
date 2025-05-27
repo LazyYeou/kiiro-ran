@@ -10,9 +10,11 @@ let objectLikeArray2 = {
   length: 5,
 };
 
-let newArr = Array.from(objectLikeArray2);
+let newArr = [1, 2, 3];
 
-console.log(literalArray);
-console.log(objectLikeArray);
-console.log(newArr);
-console.log(newArr == literalArray);
+let newArr2 = newArr.map((item) => (item = item * 2));
+
+let newArr3 = newArr.forEach((item) => (item = item * 2));
+
+console.log(newArr2);
+console.log(newArr3);

@@ -52,3 +52,6 @@ const object = {}; //object
 let a = "a";
 
 console.log(a.concat("1", " ", "3", "Bar"));
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("dom loaded");
+});

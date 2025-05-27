@@ -90,7 +90,6 @@ function myIndexOf(sentence, searchString, position = 0) {
 console.log(sentece.indexOf("eb")); //return the index of @searchString greater than @position
 console.log(myIndexOf(sentece, "eb"));
 
-*/
 
 //String Compare Lexicographically
 function strCompare(a, b) {
@@ -102,5 +101,4 @@ function strCompare(a, b) {
   }
   return -1;
 }
-console.log("jawa".at(6));
-
+*/
